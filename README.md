@@ -12,7 +12,7 @@ The environment needed to set up based on conda
 ```bash
 conda create -n IDS_env python=3.10
 conda activate IDS_env
-pip install flask scikit-learn pandas scapy numpy joblib 
+pip install flask scikit-learn pandas scapy numpy joblib requests locust
 ```
 
 Download (click icon) Npcap to adapt *scapy* on windows (no need for linux)
@@ -20,9 +20,9 @@ Download (click icon) Npcap to adapt *scapy* on windows (no need for linux)
 [![Multi-Modality](https://npcap.com/images/sitelogo-2x.png)]((https://npcap.com/dist/npcap-1.85.exe))
 
 ---
-## Program Struture
+## 🌐Program Structure
 
-![strktr](struture_dia.png)
+![strktr](structure_dia.png)
 
 ---
 
@@ -88,10 +88,10 @@ It continues monitoring automatically, and you could decide to pause or resume.
 
 | Name | Achievement |
 |---------|------|
-| Jin Wenzhuo |  |
-| Li Yuanzhe  |  |
-| Li Junjie |  |
-| Liu Dianyu  |  |
+| Jin Wenzhuo (team leader) | Contributed to data preprocessing by designing feature selection and implementing the train/test split. Led core model evaluation by computing accuracy and recall, implemented key Flask routes, defined alert thresholds, and designed retraining trigger logic. Also supported unit testing of the preprocessing and model pipeline. |
+| Li Yuanzhe  | Handled data cleaning and feature scaling during preprocessing. Contributed to model evaluation through false positive rate (FPR) analysis, implemented request validation in the Flask application, supported medium-level alert logic, compared metrics before and after retraining, and assisted with evaluation-related documentation.  |
+| Li Junjie | Implemented categorical feature encoding and contributed to model evaluation by computing AUC/ROC metrics. Developed prediction display and response formatting in the Flask application, implemented high-level alert escalation, managed saving and updating retrained models, and conducted API and route testing. |
+| Liu Dianyu  | Ensured feature consistency across datasets during preprocessing and contributed to metric interpretation and justification. Implemented alert logging in the Flask application, handled low-level alert logic, analyzed model adaptivity after retraining, and led the writing and organization of the final README documentation. |
 
 
 
