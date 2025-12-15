@@ -72,8 +72,7 @@ Upload .csv file on website, and make sure whether the data is raw (aligned) or 
 
 Execute simulated attacks (DoS) by yourself using *Locust*. *Note: Turn on windows Firewall*
 
-![locust](locust_icon.png)
-
+![locust](Locust_icon.png)
 
 ```conda
 locust -f attack.py --host=http://26.26.26.1:5000
