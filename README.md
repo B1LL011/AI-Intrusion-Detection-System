@@ -70,10 +70,13 @@ Upload .csv file on website, and make sure whether the data is raw (aligned) or 
 
 ## 🧪Tests 
 
-Execute simulated attacks (DoS) by yourself. *Note: Turn on windows Firewall*
+Execute simulated attacks (DoS) by yourself using *Locust*. *Note: Turn on windows Firewall*
+
+![locust](locust_icon.png)
+
 
 ```conda
-python attack.py
+locust -f attack.py --host=http://26.26.26.1:5000
 ```
 ## 🧹Monitor in real-time 
 
