@@ -1,30 +1,55 @@
-# AI-Intrusion-Detection-System
+
 
 
 
 
 [![Multi-Modality](agorabanner.png)](https://discord.com/servers/agora-999382051935506503)
-
-# Python Package Template
+# AI-Intrusion-Detection-System
+**Group 3**
 
 [![Join our Discord](https://img.shields.io/badge/Discord-Join%20our%20server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/agora-999382051935506503) [![Subscribe on YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@kyegomez3242) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kye-g-38759a207/) [![Follow on X.com](https://img.shields.io/badge/X.com-Follow-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/kyegomezb)
 
 A easy, reliable, fluid template for python packages complete with docs, testing suites, readme's, github workflows, linting and much much more
 
 
-## Installation
+## Prerequisite
 
-You can install the package using pip
+The environment needed to set up based on conda
 
 ```bash
-pip install -e .
+conda create -n IDS_env python=3.10
+conda activate IDS_env
+pip install flask scikit-learn pandas scapy numpy joblib 
 ```
 
-# Usage
+Download (click icon) Npcap to adapt *scapy* on windows (no need for linux)
+
+[![Multi-Modality](https://npcap.com/images/sitelogo-2x.png)]((https://npcap.com/dist/npcap-1.85.exe))
+
+# Quick Run
+Initially run the starter (web server) file
+
 ```python
-print("hello world")
-
+python app.py
 ```
+You'll get something like this:
+
+```output
+[Collector] Sniffer started
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://26.26.26.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+[Collector] Sniffer started
+ * Debugger is active!
+ * Debugger PIN: 274-065-662
+```
+
+Then randomly choose one of the two websites to enter.
 
 
 
@@ -63,10 +88,3 @@ The **correct steps** to create a new realease are the following:
 
 The CI will run when you create the new release.
 
-# Docs
-We use MK docs. This repo comes with the zeta docs. All the docs configurations are already here along with the readthedocs configs.
-
-
-
-# License
-MIT
