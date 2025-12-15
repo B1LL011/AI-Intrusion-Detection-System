@@ -1,18 +1,14 @@
+<p align="center">
+  <img src="title_icon.png" width="700">
+</p>
 
-
-
-
-
-[![Multi-Modality](agorabanner.png)](https://discord.com/servers/agora-999382051935506503)
 # AI-Intrusion-Detection-System
 **Group 3**
 
-[![Join our Discord](https://img.shields.io/badge/Discord-Join%20our%20server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/agora-999382051935506503) [![Subscribe on YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@kyegomez3242) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kye-g-38759a207/) [![Follow on X.com](https://img.shields.io/badge/X.com-Follow-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/kyegomezb)
-
-A easy, reliable, fluid template for python packages complete with docs, testing suites, readme's, github workflows, linting and much much more
+[![Google Scholar](https://scholar.google.com/intl/en/scholar/images/1x/scholar_logo_64dp.png) Contact on Google Scholar](https://scholar.google.com/citations?user=z7jU_V4AAAAJ&hl=zh-CN)
 
 
-## Prerequisite
+## 🧾Prerequisite
 
 The environment needed to set up based on conda
 
@@ -26,10 +22,11 @@ Download (click icon) Npcap to adapt *scapy* on windows (no need for linux)
 
 [![Multi-Modality](https://npcap.com/images/sitelogo-2x.png)]((https://npcap.com/dist/npcap-1.85.exe))
 
-# Quick Run
+---
+## 🚀Quick Run 
 Initially run the starter (web server) file
 
-```python
+```conda
 python app.py
 ```
 You'll get something like this:
@@ -51,40 +48,46 @@ Press CTRL+C to quit
 
 Then randomly choose one of the two websites to enter.
 
+---
 
+## 🤖Train / Retrain
 
-### Code Quality 🧹
+*When training or retraining, suspend the real-time monitoring by clicking pause button, or there would be a concurrency problem.*
+It will take a dozen seconds to train. After completing successfully, performance matrics will display below like this:
 
-- `make style` to format the code
-- `make check_code_quality` to check code quality (PEP8 basically)
-- `black .`
-- `ruff . --fix`
-
-### Tests 🧪
-
-[`pytests`](https://docs.pytest.org/en/7.1.x/) is used to run our tests.
-
-### Publish on PyPi 🚀
-
-**Important**: Before publishing, edit `__version__` in [src/__init__](/src/__init__.py) to match the wanted new version.
-
-```
-poetry build
-poetry publish
+```output
+{
+  "AUC": 0.9991242715005394,
+  "Accuracy": 0.9993853140683531,
+  "Avg PFR": 0.00018087369043881765,
+  "Recall": 0.996118258307724
+}
 ```
 
-### CI/CD 🤖
+## 📈Manual Inference (prediction)
 
-We use [GitHub actions](https://github.com/features/actions) to automatically run tests and check code quality when a new PR is done on `main`.
+Upload .csv file on website, and make sure whether the data is raw (aligned) or not.
 
-On any pull request, we will check the code quality and tests.
+## 🧪Tests 
 
-When a new release is created, we will try to push the new code to PyPi. We use [`twine`](https://twine.readthedocs.io/en/stable/) to make our life easier. 
+Execute simulated attacks (DoS) by yourself. *Note: Turn on windows Firewall*
 
-The **correct steps** to create a new realease are the following:
-- edit `__version__` in [src/__init__](/src/__init__.py) to match the wanted new version.
-- create a new [`tag`](https://git-scm.com/docs/git-tag) with the release name, e.g. `git tag v0.0.1 && git push origin v0.0.1` or from the GitHub UI.
-- create a new release from GitHub UI
+```conda
+python attack.py
+```
+## 🧹Monitor in real-time 
 
-The CI will run when you create the new release.
+It continues monitoring automatically, and you could decide to pause or resume.
+
+## 🧑‍🤝‍🧑Contribution
+
+| Name | Achievement |
+|---------|------|
+| Jin Wenzhuo |  |
+| Li Yuanzhe  |  |
+| Li Junjie |  |
+| Liu Dianyu  |  |
+
+
+
 
