@@ -5,9 +5,6 @@
 # AI-Intrusion-Detection-System
 **Group 3**
 
-[![Google Scholar](https://scholar.google.com/intl/en/scholar/images/1x/scholar_logo_64dp.png) Contact on Google Scholar](https://scholar.google.com/citations?user=z7jU_V4AAAAJ&hl=zh-CN)
-
-
 ## 🧾Prerequisite
 
 The environment needed to set up based on conda
@@ -23,6 +20,12 @@ Download (click icon) Npcap to adapt *scapy* on windows (no need for linux)
 [![Multi-Modality](https://npcap.com/images/sitelogo-2x.png)]((https://npcap.com/dist/npcap-1.85.exe))
 
 ---
+## Program Struture
+
+![strktr](struture_dia.png)
+
+---
+
 ## 🚀Quick Run 
 Initially run the starter (web server) file
 
